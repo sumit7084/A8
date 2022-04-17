@@ -47,7 +47,7 @@ SELECT * FROM person WHERE first_name like 'R%'; <br/>
 SELECT * FROM person_hash_index WHERE first_name like 'R%'; <br/>
 show profiles; <br/>
 explain SELECT * FROM person_hash_index WHERE first_name like 'R%'; <br/>
- <br/>![d1fbebca-8291-4733-bb69-623773c64635](https://user-images.githubusercontent.com/94688048/163728661-f4fe20bd-8987-4b80-9e95-035fc28ef3ea.jpg)<br/>
+ <br/>![d1fbebca-8291-4733-bb69-623773c64635](https://user-images.githubusercontent.com/94688048/163728661-f4fe20bd-8987-4b80-9e95-035fc28ef3ea.jpg )<br/>
 ![44f6f71d-bb7f-486c-9daf-7fd1de3e186f](https://user-images.githubusercontent.com/94688048/163728667-d45cdfd7-a2db-4c11-84c9-18f2246b0c95.jpg)
 <br/>
 Q3 <br/>
