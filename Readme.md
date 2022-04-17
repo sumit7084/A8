@@ -36,7 +36,7 @@ explain (SELECT * FROM person_hash_index WHERE first_name like 'Y%' <br/>
 UNION <br/>
 SELECT * FROM person_hash_index WHERE last_name like 'S%');
  <br/>
- ![87baa5e8-9754-4dfc-864e-6fb689e47d48](https://user-images.githubusercontent.com/94688048/163728647-2a57fcc4-9e6d-4be1-b31e-1409312e3022.jpg)
+ ![87baa5e8-9754-4dfc-864e-6fb689e47d48](https://user-images.githubusercontent.com/94688048/163728647-2a57fcc4-9e6d-4be1-b31e-1409312e3022.jpg)<br/>
 ![23dc20c7-6acc-46de-b234-d776d3f434b9](https://user-images.githubusercontent.com/94688048/163728648-9bfb6461-156e-47ec-9d2f-8a3deb9a9a6d.jpg)
  <br/>
  
@@ -47,7 +47,7 @@ SELECT * FROM person WHERE first_name like 'R%'; <br/>
 SELECT * FROM person_hash_index WHERE first_name like 'R%'; <br/>
 show profiles; <br/>
 explain SELECT * FROM person_hash_index WHERE first_name like 'R%'; <br/>
- <br/>![d1fbebca-8291-4733-bb69-623773c64635](https://user-images.githubusercontent.com/94688048/163728661-f4fe20bd-8987-4b80-9e95-035fc28ef3ea.jpg)
+ <br/>![d1fbebca-8291-4733-bb69-623773c64635](https://user-images.githubusercontent.com/94688048/163728661-f4fe20bd-8987-4b80-9e95-035fc28ef3ea.jpg)<br/>
 ![44f6f71d-bb7f-486c-9daf-7fd1de3e186f](https://user-images.githubusercontent.com/94688048/163728667-d45cdfd7-a2db-4c11-84c9-18f2246b0c95.jpg)
 <br/>
 Q3 <br/>
@@ -61,8 +61,8 @@ select * from person where id = 1; <br/>
 select * from player_id_hash_index where id =1; <br/>
 show profiles; <br/>
 explain select * from player_id_hash_index where id =1; <br/> 
- ![a8ede516-d812-48e0-be33-f05742a07dc9](https://user-images.githubusercontent.com/94688048/163728677-f7b1aa89-4aa0-4122-b088-e6844d0ee650.jpg)
-![25a69c02-9d3c-4fc4-8b18-72079b35ef26](https://user-images.githubusercontent.com/94688048/163728682-b3cccfcf-c689-4db7-95e0-f811bbeffa4f.jpg)
+ ![a8ede516-d812-48e0-be33-f05742a07dc9](https://user-images.githubusercontent.com/94688048/163728677-f7b1aa89-4aa0-4122-b088-e6844d0ee650.jpg) <br/>
+![25a69c02-9d3c-4fc4-8b18-72079b35ef26](https://user-images.githubusercontent.com/94688048/163728682-b3cccfcf-c689-4db7-95e0-f811bbeffa4f.jpg) 
 
  <br/>
 Q4 <br/>
@@ -89,7 +89,7 @@ show profiles; <br/>
 explain (select * from match_info_btree_index where date_on_match_played > '2013-11-30' <br/>
 union <br/>
 select * from match_info_btree_index where date_on_match_played < '2004-11-30'); <br/>
-![5e3ceda4-551d-42eb-81ed-02feec6c4585](https://user-images.githubusercontent.com/94688048/163728270-05872617-bfa1-499a-b13f-d2627ec5b741.jpg)
+![5e3ceda4-551d-42eb-81ed-02feec6c4585](https://user-images.githubusercontent.com/94688048/163728270-05872617-bfa1-499a-b13f-d2627ec5b741.jpg)<br/>
 ![6671776e-499a-4921-b7a7-256f3da2f661](https://user-images.githubusercontent.com/94688048/163728278-5dcfb79c-8818-45c9-bb22-de0f447d32d4.jpg)
  <br/>
 <br/>
@@ -99,7 +99,7 @@ select * from match_duplicate; <br/>
 Update match_duplicate <br/>
 Set india_total_runs = NULL where match_id = 1003 ; <br/>
 Select Count(*) from match_duplicate where india_total_runs = true; <br/>
- <br/>![90d22df1-799b-44e8-b87f-6d11191425d1](https://user-images.githubusercontent.com/94688048/163728545-3f9b5f1a-141a-4a83-b3b3-07ba17245848.jpg) 
+ <br/>![90d22df1-799b-44e8-b87f-6d11191425d1](https://user-images.githubusercontent.com/94688048/163728545-3f9b5f1a-141a-4a83-b3b3-07ba17245848.jpg) <br/>
 ![0c644d43-4fe0-408a-90b7-c4142bbae43a](https://user-images.githubusercontent.com/94688048/163728691-b3e35c57-cede-452b-87a2-f6473991f804.jpg)
 
  <br/>
@@ -124,7 +124,7 @@ select * from match_info_btree_index natural join venue_info where date_on_match
 show profiles; <br/>
 explain select * from match_info_btree_index natural join venue_info where  <br/>date_on_match_played = '2008-01-17';
  <br/>
- ![cd959e17-1385-4185-841a-bfbf68984c92](https://user-images.githubusercontent.com/94688048/163728557-b0d148cf-4e4f-4afb-8d08-e80cd91a6b55.jpg)
+ ![cd959e17-1385-4185-841a-bfbf68984c92](https://user-images.githubusercontent.com/94688048/163728557-b0d148cf-4e4f-4afb-8d08-e80cd91a6b55.jpg)<br/>
 ![c6f92f10-12ae-48df-be3d-330ec5c0284d](https://user-images.githubusercontent.com/94688048/163728564-87a10c64-dfc3-4f89-9ab4-3b108a0d7c24.jpg)
 The query runs faster in join as compared to subquery. The sql have main property of join  removing it will make it similar to excel sheet. Joining the table helps in using the defined relation. In 2NF or higher normalization, the table is been divided into parts to avoid data redundancy and optimize the process. Since the data will be less in 2NF or more so search time will reduce. <br/>
 Disadvantages <br/>
@@ -147,7 +147,7 @@ show profiles; <br/>
  <br/>
 explain select * from person_id_hash_index where id in  (select id from <br/> player_match_info_hash_index where <br/>
 match_id = (select match_id from stadium_name_hash_index where stadium_name = 'Wankhede Stadium' )); <br/>
- <br/>![2b8be9b3-66dd-451d-9190-b07ae5c08295](https://user-images.githubusercontent.com/94688048/163728585-f5243b17-1d18-460e-9f52-0659a0b19f54.jpg)
+ <br/>![2b8be9b3-66dd-451d-9190-b07ae5c08295](https://user-images.githubusercontent.com/94688048/163728585-f5243b17-1d18-460e-9f52-0659a0b19f54.jpg)<br/>
  ![144be350-f46b-4a90-aca1-20f0df8b20dd](https://user-images.githubusercontent.com/94688048/163728590-ac384738-cd4d-41e1-9ac3-3e0ad501ef47.jpg)
  
  <table>
